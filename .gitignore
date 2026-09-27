@@ -53,3 +53,20 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# my ignore
+*.o
+*.out
+*.a
+a.out
+program
+*.dSYM/
+*.gdb
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.log
+*.sh
+.gitignore
+
