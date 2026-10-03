@@ -5,7 +5,7 @@ static int	is_space(char c)
 	return (c == ' ' || (c >= 9 && c <= 13));
 }
 
-int	ft_atoi(const char *str)
+int	ft_atoi(const char *nptr)
 {
 	long	r;
 	int		sign;
@@ -13,23 +13,23 @@ int	ft_atoi(const char *str)
 
 	r = 0;
 	sign = 1;
-	while (is_space(*str))
-		str++;
-	if (*str == '-' || *str == '+')
+	while (is_space(*nptr))
+		nptr++;
+	if (*nptr == '-' || *nptr == '+')
 	{
-		if (*str == '-')
+		if (*nptr == '-')
 			sign = -1;
-		str++;
+		nptr++;
 	}
-	while (ft_isdigit(*str))
+	while (ft_isdigit(*nptr))
 	{
-		digit = *str - '0';
+		digit = *nptr - '0';
 		if (sign == 1 && r > (LONG_MAX - digit) / 10)
 			return ((int)LONG_MAX);
 		else if (sign == -1 && r > (LONG_MAX - digit) / 10)
 			return ((int)(-LONG_MAX - 1));
 		r = r * 10 + digit;
-		str++;
+		nptr++;
 	}
 	return ((int)(r * sign));
 }
