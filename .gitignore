@@ -70,4 +70,5 @@ program
 *.sh
 .gitignore
 .tldr
-
+.vscomplete
+*.json
