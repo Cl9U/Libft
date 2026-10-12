@@ -6,7 +6,7 @@
 /*   By: sfaraji <sfaraji@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 16:02:07 by sfaraji           #+#    #+#             */
-/*   Updated: 2026/10/12 17:07:38 by sfaraji          ###   ########.fr       */
+/*   Updated: 2026/10/12 17:59:31 by sfaraji          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,13 +80,4 @@ char	**ft_split(char const *s, char c)
 	}
 	strs[i] = NULL;
 	return (strs);
-}
-
-int main()
-{
-	char **str;
-	str = ft_split("helloShelloShello", 'S');
-	int i = 0;
-	while (i < 3)
-		printf("%s\n", str[i++]);
 }
