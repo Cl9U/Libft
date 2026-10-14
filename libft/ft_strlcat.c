@@ -6,7 +6,7 @@
 /*   By: sfaraji <sfaraji@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 11:50:55 by sfaraji           #+#    #+#             */
-/*   Updated: 2026/10/12 11:50:56 by sfaraji          ###   ########.fr       */
+/*   Updated: 2026/10/14 13:16:33 by sfaraji          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 	size_t	slen;
 	size_t	i;
 
-	dlen = ft_strlen(dst);
+	dlen = 0;
+	while (dst[dlen] && dlen < dsize)
+		dlen++;
 	slen = ft_strlen(src);
 	if (dlen >= dsize)
 		return (dsize + slen);

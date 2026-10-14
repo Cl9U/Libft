@@ -6,7 +6,7 @@
 /*   By: sfaraji <sfaraji@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 11:50:38 by sfaraji           #+#    #+#             */
-/*   Updated: 2026/10/12 11:50:39 by sfaraji          ###   ########.fr       */
+/*   Updated: 2026/10/13 18:04:51 by sfaraji          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putnbr_fd(int n, int fd)
 {
 	long	nb;
 
+	if (fd < 0)
+		return ;
 	nb = n;
 	if (nb < 0)
 	{
