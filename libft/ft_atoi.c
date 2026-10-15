@@ -6,7 +6,7 @@
 /*   By: sfaraji <sfaraji@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 11:49:42 by sfaraji           #+#    #+#             */
-/*   Updated: 2026/10/12 11:49:46 by sfaraji          ###   ########.fr       */
+/*   Updated: 2026/10/15 11:32:00 by sfaraji          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,6 @@ int	ft_atoi(const char *nptr)
 	while (ft_isdigit(*nptr))
 	{
 		digit = *nptr - '0';
-		if (sign == 1 && r > (LONG_MAX - digit) / 10)
-			return ((int)LONG_MAX);
-		else if (sign == -1 && r > (LONG_MAX - digit) / 10)
-			return ((int)(-LONG_MAX - 1));
 		r = r * 10 + digit;
 		nptr++;
 	}

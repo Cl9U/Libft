@@ -6,7 +6,7 @@
 /*   By: sfaraji <sfaraji@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 11:55:11 by sfaraji           #+#    #+#             */
-/*   Updated: 2026/10/14 10:29:43 by sfaraji          ###   ########.fr       */
+/*   Updated: 2026/10/15 09:40:28 by sfaraji          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <limits.h>
 # include <unistd.h>
+# include <stdint.h>
 
 typedef struct s_list
 {

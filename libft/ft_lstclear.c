@@ -6,7 +6,7 @@
 /*   By: sfaraji <sfaraji@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 14:01:03 by sfaraji           #+#    #+#             */
-/*   Updated: 2026/10/13 21:34:42 by sfaraji          ###   ########.fr       */
+/*   Updated: 2026/10/14 20:25:09 by sfaraji          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*next;
 
-	if (!lst || !del)
+	if (!lst)
 		return ;
 	while (*lst)
 	{
