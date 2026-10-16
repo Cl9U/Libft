@@ -6,7 +6,7 @@
 /*   By: sfaraji <sfaraji@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 11:50:40 by sfaraji           #+#    #+#             */
-/*   Updated: 2026/10/13 18:05:09 by sfaraji          ###   ########.fr       */
+/*   Updated: 2026/10/16 09:23:32 by sfaraji          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (!s || fd < 0)
+	if (fd < 0)
 		return ;
 	write(fd, s, ft_strlen(s));
 }
