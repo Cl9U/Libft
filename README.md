@@ -9,6 +9,8 @@ functions work by rewriting them, and to build reusable utilities for future
 42 projects. It is compiled into the static library `libft.a` and follows the
 42 Norm.
 
+**Result:** this project was validated with a score of 100/100.
+
 ## Instructions
 
 ```sh
